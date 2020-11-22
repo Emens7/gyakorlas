@@ -1,0 +1,150 @@
+body {
+ font-size: large;
+}
+
+.container {
+  width: 1250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.stage div {
+  display: inline-block;
+  float: inherit;
+  width: 15%;
+  height: 15%;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative;
+  background: #ff3300;
+}
+
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(238, 13, 13, 0) 58%);
+  -webkit-filter: blur(5px);
+  z-index: 2;
+}
+
+.stage {
+  width: 650px;
+  height: 650px;
+  display: inline-block;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+.stage div:nth-child(3n){
+  background: #ffce00;
+  color: #ffce00;
+}
+
+.stage div:nth-child(3n-1){
+  background:#3f7abe;
+  color:#3f7abe;
+}
+
+.stage div:nth-child(5n){
+  background:#8e7a8e;
+  color:#8e7a8e;
+}
+
+.stage div:nth-child(13n){
+  background:#8e7a8e;
+  color:#8e7a8e;
+}
+
+.stage div:nth-child(10n){
+  background:#ff3300;
+  color: #ff3300;
+}
+
+.stage div:nth-child(4n){
+  clear:right;
+}
+
+.balloons-end {
+  display: none;
+  color: 'blue';
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(202, 155, 27); 
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.alert {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff3300;
+}
+
+.paragraph {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3f7abe;
+}
+
+/*
+
+.balloon-img div{
+  background: #ff3300;
+  height: 121px;
+  width: 119px;
+  text-align: center;
+  color: #ff3300;
+  font-size: 40px;
+  font-family: sans-serif, arial;
+  border-radius: 100%;
+  margin-top: 20px;
+  display: inline-block;
+  margin: 2.5px 5 px 2.5px 0px;
+}
+
+.balloon-img div:nth-child(3n){
+  background: #ffce00;
+  color: #ffce00;
+}
+
+.balloon-img div:nth-child(3n-1){
+  background:#3f7abe;
+  color:#3f7abe;
+}
+
+.balloon-img div:nth-child(5n){
+  background:#8e7a8e;
+  color:#8e7a8e;
+}
+
+.balloon-img div:nth-child(13n){
+  background:#8e7a8e;
+  color:#8e7a8e;
+}
+
+.balloon-img div:nth-child(10n){
+  background:#ff3300;
+  color: #ff3300;
+}
+
+.balloon-img div:nth-child(4n){
+  clear:right;
+}
+*/
