@@ -41,6 +41,8 @@ const daysPassed = (dt) => {
   console.log(daysPassed(new Date(2020, 0, 1)));
   console.log(`Hétköznapok száma: ${daysPassed(new Date())} nap`);
 
+  document.querySelector('.workday').innerHTML = daysPassed(new Date())
+
 
 /*3. Írj egy függvényt, ami paraméterként egy Date objektumot kap, a visszatérési értéke pedig egy objektum két tulajdonsággal, 
 ami a következő formátumban tartalmazza a paraméterként kapott dátumot:
